@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40BDC292AED62F600868956 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BDC282AED62F600868956 /* NoItemsView.swift */; };
+		C40BDC2B2AED941D00868956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40BDC2A2AED941D00868956 /* LaunchScreen.storyboard */; };
+		C48382352AEAC33800ADC33B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48382342AEAC33800ADC33B /* ListViewModel.swift */; };
 		C4B2262F2AE024F700167C0B /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2262E2AE024F700167C0B /* ToDoListApp.swift */; };
-		C4B226312AE024F700167C0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B226302AE024F700167C0B /* ContentView.swift */; };
 		C4B226332AE024F800167C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B226322AE024F800167C0B /* Assets.xcassets */; };
 		C4B226362AE024F800167C0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B226352AE024F800167C0B /* Preview Assets.xcassets */; };
+		C4B2263E2AE0266500167C0B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2263D2AE0266500167C0B /* ListView.swift */; };
+		C4B226402AE0286600167C0B /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2263F2AE0286600167C0B /* ListRowView.swift */; };
+		C4B226422AE02ABE00167C0B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B226412AE02ABE00167C0B /* AddView.swift */; };
+		C4C054732AE1C92B00F605A0 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C054722AE1C92B00F605A0 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C40BDC282AED62F600868956 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
+		C40BDC2A2AED941D00868956 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C48382342AEAC33800ADC33B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		C4B2262B2AE024F700167C0B /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B2262E2AE024F700167C0B /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		C4B226302AE024F700167C0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4B226322AE024F800167C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B226352AE024F800167C0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4B2263D2AE0266500167C0B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C4B2263F2AE0286600167C0B /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		C4B226412AE02ABE00167C0B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		C4C054722AE1C92B00F605A0 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C48382322AEAC30F00ADC33B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C48382342AEAC33800ADC33B /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C4B226222AE024F700167C0B = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +71,10 @@
 		C4B2262D2AE024F700167C0B /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				C48382322AEAC30F00ADC33B /* ViewModel */,
+				C4C0546F2AE1C8BB00F605A0 /* Model */,
+				C4B2263C2AE0265200167C0B /* Views */,
 				C4B2262E2AE024F700167C0B /* ToDoListApp.swift */,
-				C4B226302AE024F700167C0B /* ContentView.swift */,
 				C4B226322AE024F800167C0B /* Assets.xcassets */,
 				C4B226342AE024F800167C0B /* Preview Content */,
 			);
@@ -65,6 +87,26 @@
 				C4B226352AE024F800167C0B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4B2263C2AE0265200167C0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4B2263D2AE0266500167C0B /* ListView.swift */,
+				C4B2263F2AE0286600167C0B /* ListRowView.swift */,
+				C4B226412AE02ABE00167C0B /* AddView.swift */,
+				C40BDC282AED62F600868956 /* NoItemsView.swift */,
+				C40BDC2A2AED941D00868956 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4C0546F2AE1C8BB00F605A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4C054722AE1C92B00F605A0 /* ItemModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40BDC2B2AED941D00868956 /* LaunchScreen.storyboard in Resources */,
 				C4B226362AE024F800167C0B /* Preview Assets.xcassets in Resources */,
 				C4B226332AE024F800167C0B /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4B226312AE024F700167C0B /* ContentView.swift in Sources */,
+				C4C054732AE1C92B00F605A0 /* ItemModel.swift in Sources */,
+				C4B226422AE02ABE00167C0B /* AddView.swift in Sources */,
+				C48382352AEAC33800ADC33B /* ListViewModel.swift in Sources */,
 				C4B2262F2AE024F700167C0B /* ToDoListApp.swift in Sources */,
+				C4B2263E2AE0266500167C0B /* ListView.swift in Sources */,
+				C40BDC292AED62F600868956 /* NoItemsView.swift in Sources */,
+				C4B226402AE0286600167C0B /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +318,11 @@
 				DEVELOPMENT_TEAM = 98U5KGF98D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +349,11 @@
 				DEVELOPMENT_TEAM = 98U5KGF98D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
